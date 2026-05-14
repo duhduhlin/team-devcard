@@ -1,3 +1,4 @@
+cat > frontend/index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,5 +8,35 @@
 <body>
     <h1>Команда "DevTeam"</h1>
     <p>Мы изучаем командную разработку с GitHub.</p>
+
+    <!-- Секция куда придут данные из API -->
+    <section id="team-section">
+        <h2>Наша команда</h2>
+        <div id="team-cards">Загрузка...</div>
+    </section>
+
+    <script>
+        const API_URL = 'http://localhost:5000/api/team';
+
+        async function loadTeam() {
+            try {
+                const response = await fetch(API_URL);
+                const members = await response.json();
+                const container = document.getElementById('team-cards');
+                container.innerHTML = members.map(m => `
+                    <div class="card">
+                        <h3>${m.name}</h3>
+                        <p><strong>${m.role}</strong></p>
+                        <p>${m.fact}</p>
+                    </div>
+                `).join('');
+            } catch (e) {
+                document.getElementById('team-cards').textContent = 'API недоступен. Запусти бэкенд!';
+            }
+        }
+
+        loadTeam();
+    </script>
 </body>
 </html>
+EOF

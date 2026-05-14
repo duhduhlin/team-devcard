@@ -28,10 +28,10 @@ C:\Users\dobro\Downloads\Колледж\Командная работа\team-dev
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\TeamApi.csproj.Up2Date
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\TeamApi.dll
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\refint\TeamApi.dll
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\TeamApi.pdb
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\TeamApi.genruntimeconfig.cache
 C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\ref\TeamApi.dll
+C:\Users\dobro\Downloads\Колледж\Командная работа\team-devcard\backend\TeamApi\obj\Debug\net8.0\swae.build.ex.cache

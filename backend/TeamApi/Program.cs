@@ -10,7 +10,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 app.UseCors();
 
-// Данные о команде — замените на реальные имена
+// Данные о команде
 var team = new[]
 {
     new { name = "Иванов Иван", role = "Tech Lead", fact = "Люблю C#" },
@@ -30,5 +30,12 @@ app.MapGet("/api/team/{name}", (string name) =>
         ? Results.Ok(member)
         : Results.NotFound(new { error = "Участник не найден" });
 });
+
+// GET /api/ping – проверка что API живой
+app.MapGet("/api/ping", () => Results.Ok(new { 
+    status = "ok", 
+    time = DateTime.Now.ToString("HH:mm:ss"), 
+    team = "DevTeam" 
+}));
 
 app.Run();

@@ -1,0 +1,6 @@
+@TeamApi_HostAddress = http://localhost:5138
+
+GET {{TeamApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
